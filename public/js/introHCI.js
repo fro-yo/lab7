@@ -9,5 +9,17 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+    $('#rootBtn').click(rootClicked);
+
+    $('#minBtn').click(minClicked);
 	// your code here
+}
+
+
+function rootClicked () {
+    ga("send", "event", "rootClicked", "success");
+}
+
+function minClicked() {
+    ga("send", "event", "minClicked", "success");
 }
